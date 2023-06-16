@@ -68,6 +68,10 @@ int main() {
 		cout << "e.Display\n";
 		cout << "4.Exit\n";
 		cin >> ch;
+
+		switch (ch) {
+
+		}
 	}
 }
 
