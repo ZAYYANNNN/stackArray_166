@@ -3,3 +3,7 @@
 
 using namespace std;
 
+class stack {
+private:
+
+};
