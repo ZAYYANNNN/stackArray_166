@@ -14,18 +14,20 @@ public:
 
 	}
 
-	int push(int element) {
+	void push() {
+		cout << "\nEnter an Element";
+		int element;
+		cin >> element;
+
 		if (top == 4) {
 			cout << "Number of data exceeds the limit." << endl;
-			return 0;
+			return ;
 
 		}
 		top++;
 		stack_array[top] = element;	//step 3
 		cout << endl;
-		cout << element << "ditambahkan" << endl;
-
-		return element;
+		cout << element << "ditambahkan(pushed)" << endl;
 	}
 
 	void pop() {
@@ -71,10 +73,7 @@ int main() {
 
 		switch (ch) {
 		case '1': {
-			cout << "\nEnter an Element : ";
-			int element;
-			cin >> element;
-			s.push(element);
+			s.push();
 			break;
 		}
 		case '2':
@@ -89,6 +88,9 @@ int main() {
 			break;
 		case '4':
 			return 0;
+		default:
+			cout << "\nInvalid Choice." << endl;
+			break;
 		}
 	}
 }
