@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class stack {
+class StackArray {
 private:
 	int stack_array[5];
 	int top;
@@ -44,4 +44,16 @@ public:
 		return (top == -1);
 	}
 
+	void display() {
+		if (empty()) {
+			cout << "\nStack is empty." << endl;
+		}
+		else {
+			for (int tmp = 0; tmp <= top; tmp++) {
+				cout << stack_array[tmp] << endl;
+			}
+		}
+	}
+
 };
+
